@@ -1,9 +1,31 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab Two
+      Noticias Ayuda Humanitaria
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+    
+    <ion-list lines="none">
+      <ion-list-header>
+        <ion-label>Ayuda Humanitaria</ion-label>
+      </ion-list-header>
+      <ion-item *ngFor="let noticia of noticiash">
+        <ion-card>
+            <ion-img src="{{noticia.imagen}}" style="height: 150px"></ion-img>
+            <ion-card-header>
+              <ion-card-subtitle>Juan Guaidó App</ion-card-subtitle>
+              <ion-card-title>{{noticia.titulo}}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p>{{noticia.texto}}</p><br>Fuente:{{noticia.fuente}}
+            </ion-card-content>
+        </ion-card>
+        
+        
+        
+      </ion-item>
+    </ion-list>
+</ion-content>

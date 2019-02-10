@@ -1,9 +1,36 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Three
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content></ion-content>
+    <ion-toolbar color="primary">
+      <ion-title>
+        Servicio Social
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+      
+      <ion-list lines="none">
+          <ion-list-header>
+            <ion-label>Ultima Noticias</ion-label>
+          </ion-list-header>
+          <ion-item *ngFor="let ayuda of ayudas">
+            <ion-card>
+                <ion-item color="primary" lines="none" color="danger">
+                    <ion-label style="font-weight:0.1rem" text-center><b>{{ayuda.titulo}}</b></ion-label>
+                    <ion-icon name="help-buoy" slot="end"></ion-icon>
+                </ion-item>
+                <ion-img src="{{ayuda.imagen}}" style="height: 150px"></ion-img>
+                <ion-card-header>
+                  <ion-card-subtitle>Juan Guaidó App</ion-card-subtitle>
+                  <ion-card-title>{{ayuda.titulo}}</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  <p>{{ayuda.texto}}</p><br>Contacto:{{ayuda.fuente}}
+                </ion-card-content>
+            </ion-card>
+            
+            
+            
+          </ion-item>
+        </ion-list>
+  </ion-content>
+  
