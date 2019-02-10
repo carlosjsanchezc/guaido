@@ -7,7 +7,22 @@
   </ion-header>
   
   <ion-content>
-      
+      <ion-refresher slot="fixed" (ionRefresh)="actualizar($event)">
+          <ion-refresher-content
+            pullingIcon="arrow-dropdown"
+            pullingText="Hale para actualizar"
+            refreshingSpinner="circles"
+            refreshingText="Actualizando...">
+          </ion-refresher-content>
+         
+        
+            <!--
+              <div *ngIf="selectedItem" padding>
+                You navigated here from <b>{{selectedItem.title }}</b>
+              </div>
+            -->
+        
+        </ion-refresher>
       <ion-list lines="none">
           <ion-list-header>
             <ion-label>Ultima Noticias</ion-label>

@@ -26,5 +26,18 @@ actualizanoticias()
     });  
 
   }
-
+  actualizar(event)
+  {
+    let apiurl:string;
+    apiurl="http://tbitpro.com/guaido/guaidoapi.php?opcion=noticiashver";
+    this.httpc.get(apiurl).subscribe(data => {
+     this.noticiash=data['noticias'];
+      console.log(this.noticiash);
+      event.target.complete();
+     }, error => {
+      console.log('error');
+      event.target.complete();
+  
+    });  
+  }
 }

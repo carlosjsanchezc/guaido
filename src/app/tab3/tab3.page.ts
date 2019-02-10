@@ -26,5 +26,18 @@ actualizanoticias()
     });  
 
   }
-
+  actualizar(event)
+  {
+    let apiurl:string;
+    apiurl="http://tbitpro.com/guaido/guaidoapi.php?opcion=ayudasver";
+    this.httpc.get(apiurl).subscribe(data => {
+     this.ayudas=data['noticias'];
+      console.log(this.ayudas);
+      event.target.complete();
+     }, error => {
+      console.log('error');
+      event.target.complete();
+  
+    });  
+  }
 }
