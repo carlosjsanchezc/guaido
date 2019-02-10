@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "896084950252",
+    "firebase_url": "https://guaido.firebaseio.com",
+    "project_id": "guaido",
+    "storage_bucket": "guaido.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896084950252:android:b4e8f947a6c1ef7d",
+        "android_client_info": {
+          "package_name": "guaido.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896084950252-2pbal1va9pti33pqdob2lbvkdien5ie3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8OcjcCuqJOwIRgTSCP3sTQlic465n2OU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
